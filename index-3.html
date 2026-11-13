@@ -816,7 +816,7 @@ function stumble(){
   say([{w:null,t:'คุณสะดุดบางอย่าง'},{w:'sys',t:'โอ้ เป็นอะไรไหม?'},{w:'sys',t:'อ๊ะ! นี่มัน…'}],()=>{
     infoCard('ก้อนหินปริศนา',`<svg width="190" height="120" viewBox="0 0 190 120">${rockSVG(mulberry(5),95,60,'lat',48)}</svg>`,
       'หินสีแดงเข้มแปลกตา ผิวเต็มไปด้วยรูพรุนเล็กๆ','ต่อไป',()=>{
-        say([{w:'sys',t:'หินแบบนี้น่าจะมีอยู่แถวนี้หลายก้อนเลยนะ'}],stumbleChoice);
+        say([{w:'sys',t:'หินแบบนี้น่าจะมีอยู่แถวนี้หลายก้อนเลยนะ เก็บให้ครบ 3 ก้อนสิ แล้วฉันจะให้ข้อมูล'}],stumbleChoice);
       });
   });
 }
@@ -840,7 +840,7 @@ function lateriteWhy(){
         'เข้าใจแล้ว',()=>{record('c');renderHS();setObj();},true);
     });
     $('#cyes',c).onclick=()=>{closeModal();explain();};
-    $('#cno',c).onclick=()=>{closeModal();say([{w:'sys',t:'ก็ต้องทำรู้ดีป่ะ?'}],explain);};
+    $('#cno',c).onclick=()=>{closeModal();say([{w:'sys',t:'ก็ต้องรู้อยู่ดีป่ะ?'}],explain);};
   });
 }
 function openHunt(){
