@@ -13,7 +13,6 @@ const firebaseConfig = {
   storageBucket: "prasart-muang-sing.firebasestorage.app",
   messagingSenderId: "487934807020",
   appId: "1:487934807020:web:a20ebdbe06644b57dc4ec9",
-  measurementId: "G-GCQYDC4T58"
 };
 </script>
 <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
